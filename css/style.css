@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+
 body{
     background-color: #222222; 
     font-family: sans-serif;
@@ -11,11 +12,43 @@ body{
 
 header{
     background-color: #EC7131;
+    height: 15%;
 }
-
-
-
-
+header>div{
+    justify-content: space-between;
+}
+.flex_container{
+    display: flex;
+    width: 100%;
+}
+.flex_centered{
+    justify-content: center;
+    align-content:center ;
+}
+.boxed{
+    width: 60%;
+    margin: 0 auto;
+}
+.links{
+    justify-self: flex-start;
+    font-weight: 700;
+}
+.icons{
+    justify-self: flex-end;
+    justify-content: flex-end;
+}
+.links, .icons, .logo{
+    padding: 2rem ;
+    gap: 1rem;
+}
+.logo img{
+    height: 4rem;
+}
+.icons img{
+    height: 2rem;
+   
+    
+}
 
 
 
@@ -25,4 +58,5 @@ footer{
 
 footer, header{
     min-height: 90px;
+    color: #ffffff;
 }
