@@ -52,16 +52,57 @@ header>div, footer>div{
 }
 
 .card{
-    width: 33%;
+    width: calc(33% - 1rem);
+    padding: 2rem 0;
 }
 .card img{
     width: 100%;
 
 }
-
-
-
-
+.relative{
+    position: relative;
+    width: 100%;
+}
+.tiket{
+    display: inline-block;
+    color: #ffffff;
+    padding: 0.3rem 0.5rem;
+    font-weight: 600;
+    position: absolute;
+   
+}
+.discount{
+    background-color: #E93628;
+    bottom: 4rem;
+    left: 0;
+}
+.more_info{
+    background-color: #397D26;
+    bottom: 4rem;
+    left: 0;
+}
+.more_info_discount{
+    left: 4rem;
+}
+.favorite{
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: xx-large;
+    /* border: solid 1px red; */
+    /* top: -1rem; */
+    right: 0;
+    transform: translateY(25%);
+}
+.new_price{
+    color: #E93628;
+    display: inline;
+    font-weight: 600;
+}
+.old_price{
+    color: #000000;
+    display: inline;
+    text-decoration: line-through;
+}
 
 footer{
     background-color: #1F1F1F;
@@ -75,4 +116,5 @@ footer, header{
 }
 main{
     min-height: 30rem;
+    gap: 1rem;
 }
