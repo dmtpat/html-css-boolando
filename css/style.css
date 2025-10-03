@@ -93,6 +93,9 @@ header>div, footer>div{
     right: 0;
     transform: translateY(25%);
 }
+.favorite:hover{
+    color: #E93628;
+}
 .new_price{
     color: #E93628;
     display: inline;
