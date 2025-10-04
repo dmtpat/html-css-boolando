@@ -12,7 +12,7 @@ body{
 
 header{
     background-color: #EC7131;
-    height: 15%;
+    /* height: 15%; */
 }
 header>div, footer>div{
     justify-content: space-between;
@@ -34,6 +34,7 @@ header>div, footer>div{
 }
 .links{
     justify-self: flex-start;
+    align-items: center;
     font-weight: 700;
 }
 .icons{
@@ -41,14 +42,14 @@ header>div, footer>div{
     justify-content: flex-end;
 }
 .links, .icons, .logo{
-    padding: 2rem ;
+    padding: 1rem ;
     gap: 1rem;
 }
 .logo img{
-    height: 4rem;
+    height: 1.5rem;
 }
 .icons img{
-    height: 2rem;   
+    height: 1.5rem;   
 }
 
 .card{
@@ -126,7 +127,16 @@ footer{
     padding-top: 2rem;
     padding-bottom: 2rem;;
 }
-
+.footer_spacing{
+     gap: 0.5rem;
+    padding-top: 1rem;
+}
+.social_icons{
+   height: 2.4rem;
+}
+.footer_link{
+    font-size: small;
+}
 footer, header{
     /* min-height: 90px; */
     color: #ffffff;
