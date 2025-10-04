@@ -92,9 +92,11 @@ header>div, footer>div{
     /* top: -1rem; */
     right: 0;
     transform: translateY(25%);
+    z-index: 3;
 }
 .favorite:hover{
     color: #E93628;
+    
 }
 .new_price{
     color: #E93628;
@@ -106,7 +108,19 @@ header>div, footer>div{
     display: inline;
     text-decoration: line-through;
 }
-
+.img_hover{
+    width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    /* border: solid 1px #000000; */
+    opacity: 0;
+}
+.relative:hover .img_hover{
+    opacity: 1;
+}
 footer{
     background-color: #1F1F1F;
     padding-top: 2rem;
