@@ -53,11 +53,13 @@ header>div, footer>div{
 }
 
 .card{
-    width: calc(33% - 1rem);
+    width: calc(33% - (2rem / 3));
+    /* 2rem / 3  è lo spazio che deve ridurre ogniuna delle tre colonne dato che il gap e di 1rem per 2 spazi quindi il totale da ridurre dalle colonne è di (tot spaziotra le card)/(numero di colonne)*/
     padding: 2rem 0;
 }
 .card img{
     width: 100%;
+    display: block;
 
 }
 .relative{
@@ -92,6 +94,7 @@ header>div, footer>div{
     /* border: solid 1px red; */
     /* top: -1rem; */
     right: 0;
+    /* top: 0; */
     transform: translateY(25%);
     z-index: 3;
 }
@@ -128,7 +131,7 @@ footer{
     padding-bottom: 2rem;;
 }
 .footer_spacing{
-     gap: 0.5rem;
+    gap: 0.5rem;
     padding-top: 1rem;
 }
 .social_icons{
